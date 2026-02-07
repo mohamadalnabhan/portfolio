@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Fira+Code:wght@400;500&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: 222 62% 11%;  /* #0a192f */
+  --foreground: 216 64% 95%;  /* #e6f1ff */
+  
+  --primary: 166 100% 70%;    /* #64ffda */
+  --primary-foreground: 222 62% 11%;
+  
+  --secondary: 220 14% 61%;   /* #8892b0 */
+  --secondary-foreground: 216 64% 95%;
+  
+  --muted: 218 29% 16%;       /* #112240 */
+  --muted-foreground: 220 14% 61%;
+  
+  --accent: 166 100% 70%;
+  --accent-foreground: 222 62% 11%;
+  
+  --card: 218 29% 16%;        /* #112240 */
+  --card-foreground: 216 64% 95%;
+  
+  --border: 217 24% 23%;      /* #233554 */
+  --input: 217 24% 23%;
+  
+  --ring: 166 100% 70%;
+  
+  --radius: 0.5rem;
+}
+
+@layer base {
+  body {
+    @apply bg-[#0a192f] text-[#8892b0] font-sans antialiased leading-relaxed;
+    overflow-x: hidden;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-semibold text-[#e6f1ff] tracking-tight;
+  }
+  
+  ::selection {
+    @apply bg-[#233554] text-[#64ffda];
+  }
+}
+
+@layer utilities {
+  .text-cyan {
+    color: #64ffda;
+  }
+  .bg-navy {
+    background-color: #0a192f;
+  }
+  .bg-light-navy {
+    background-color: #112240;
+  }
+  .bg-lighter-navy {
+    background-color: #233554;
+  }
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #0a192f;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #233554;
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #64ffda;
+}

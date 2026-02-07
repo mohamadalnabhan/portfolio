@@ -1,0 +1,346 @@
+Create a clean, modern, mobile-first personal portfolio website using ONLY:
+
+HTML
+
+CSS
+
+minimal vanilla JavaScript (only if necessary)
+
+IMPORTANT REQUIREMENTS:
+
+Frontend only (NO backend, NO server, NO Node.js, NO Express)
+
+NO environment variables
+
+NO frameworks
+
+All code must run by simply opening index.html in a browser
+
+Provide a complete folder structure
+
+Provide full source code for every file
+
+No external dependencies - everything self-contained
+
+TECHNICAL CONSTRAINTS:
+
+Use CSS Grid and Flexbox for layouts
+
+Use CSS custom properties (variables) for colors
+
+Use semantic HTML5 elements
+
+Keep JavaScript under 100 lines total
+
+Optimize images (use placeholder images with descriptive alt text)
+
+Ensure WCAG 2.1 accessibility compliance
+
+FOLDER STRUCTURE:
+
+text
+portfolio/
+│
+├── index.html
+├── style.css
+├── script.js (optional)
+│
+├── images/
+│   ├── hero-bg.jpg
+│   ├── project-1.jpg
+│   ├── project-2.jpg
+│   ├── project-3.jpg
+│   ├── project-4.jpg
+│   └── avatar.jpg
+│
+└── README.txt
+DESIGN SPECIFICATIONS:
+
+Color Palette:
+
+Background: #0a192f (dark blue)
+
+Primary: #64ffda (cyan)
+
+Text: #e6f1ff (light blue)
+
+Secondary: #8892b0 (gray-blue)
+
+Accent: #ccd6f6 (light gray)
+
+Typography:
+
+Headings: 'Calibri', 'Segoe UI', sans-serif
+
+Body: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+
+Monospace: 'Courier New', monospace (for code)
+
+Spacing: Use rem units (1rem = 16px)
+
+Breakpoints: Mobile: 375px, Tablet: 768px, Desktop: 1024px
+
+PAGE STRUCTURE:
+
+1. HERO SECTION (Full-viewport height)
+
+Navigation bar (sticky on scroll)
+
+Logo: "MD" (monogram)
+
+Links: Home, Skills, Projects, Contact
+
+Mobile hamburger menu (CSS-only toggle)
+
+Hero content:
+
+Greeting: "Hi, my name is"
+
+Name: "Mohammed" (prominent display)
+
+Title: "Flutter & Mobile App Developer"
+
+Summary paragraph: "I build high-performance mobile applications using Flutter, with expertise in Firebase, REST APIs, and clean architecture principles. Passionate about creating intuitive user experiences."
+
+CTA Button: "View My Work" (scrolls to projects)
+
+2. SKILLS SECTION
+
+Section title: "Technical Skills"
+
+Skills organized in categories:
+
+Mobile Development:
+
+Flutter & Dart
+
+State Management (GetX, Provider, Riverpod)
+
+Firebase (Auth, Firestore, Cloud Functions)
+
+REST APIs (Dio, HTTP, JSON parsing)
+
+Local Storage (SQLite, Hive, SharedPreferences)
+
+Mobile Features (Camera, Geolocation, Push Notifications)
+
+Backend & Web:
+
+PHP (API development)
+
+SQL (MySQL, PostgreSQL)
+
+HTML5 & CSS3
+
+JavaScript (ES6+)
+
+Supabase (Auth, Realtime, Storage)
+
+Tools & Practices:
+
+Git & GitHub
+
+VS Code & Android Studio
+
+Clean Architecture
+
+Debugging & Testing
+
+Responsive Design
+
+Visualization: Use CSS grid with skill cards, each showing skill name and proficiency bar
+
+3. PROJECTS SECTION
+
+Section title: "Featured Projects"
+
+Project cards (4 projects, 1 per row mobile, 2 per row desktop):
+
+Project 1: E-commerce Mobile App
+
+Tech: Flutter, Firebase, PHP, MySQL
+
+Description: Full-featured shopping app with cart, payments, and admin panel
+
+Features:
+
+User authentication with Firebase
+
+Real-time inventory updates
+
+Payment gateway integration
+
+Admin dashboard (PHP backend)
+
+Links: Live Demo | GitHub
+
+Project 2: Real-time Chat Application
+
+Tech: Flutter, Supabase, GetX
+
+Description: Messaging app with groups, media sharing, and read receipts
+
+Features:
+
+Supabase real-time database
+
+End-to-end encryption
+
+Media upload to Supabase Storage
+
+Push notifications
+
+Links: Live Demo | GitHub
+
+Project 3: Weather Forecast App
+
+Tech: Flutter, REST API, GetX
+
+Description: Beautiful weather app with location services and forecasts
+
+Features:
+
+OpenWeatherMap API integration
+
+Geolocation with permissions
+
+7-day forecast
+
+Dynamic theme based on weather
+
+Links: Live Demo | GitHub
+
+Project 4: Restaurant Landing Page
+
+Tech: HTML5, CSS3, JavaScript, PHP
+
+Description: Responsive restaurant website with online ordering
+
+Features:
+
+Mobile-first responsive design
+
+Online reservation system
+
+Menu with filtering
+
+WhatsApp integration for orders
+
+Links: Live Demo | GitHub
+
+4. CONTACT SECTION
+
+Section title: "Get In Touch"
+
+Contact options:
+
+Email: mohammed@example.com (mailto: link)
+
+GitHub: github.com/username (new tab link)
+
+LinkedIn: linkedin.com/in/username (new tab link)
+
+Simple contact form (frontend only, will not submit):
+
+Name input
+
+Email input
+
+Message textarea
+
+Submit button (shows success message via JavaScript)
+
+Copyright notice
+
+INTERACTIVE ELEMENTS (CSS/JS):
+
+Smooth scrolling for anchor links (JS)
+
+Mobile hamburger menu (CSS-only with checkbox hack)
+
+Project card hover effects (CSS transforms)
+
+Form validation feedback (minimal JS)
+
+Scroll-to-top button (appears after scrolling)
+
+Active nav link highlighting based on scroll position
+
+ACCESSIBILITY FEATURES:
+
+Semantic HTML structure
+
+ARIA labels for interactive elements
+
+Keyboard navigation support
+
+Focus states for all interactive elements
+
+Color contrast ratio ≥ 4.5:1
+
+Skip to main content link
+
+PERFORMANCE OPTIMIZATIONS:
+
+CSS minified in production
+
+Images optimized and lazy-loaded
+
+Critical CSS inlined
+
+Minimal JavaScript with defer attribute
+
+CODE REQUIREMENTS:
+
+Valid HTML5
+
+CSS with vendor prefixes where needed
+
+JavaScript with error handling
+
+Comments for complex sections
+
+No console.log in production code
+
+OUTPUT FORMAT:
+Provide complete, ready-to-use code for:
+
+index.html (complete file)
+
+style.css (complete file)
+
+script.js (if needed, complete file)
+
+Image references (use placeholder URLs that work offline)
+
+README.txt with instructions
+
+NO:
+
+No Tailwind, Bootstrap, or any CSS frameworks
+
+No jQuery or JS frameworks
+
+No build tools or bundlers
+
+No package.json or node_modules
+
+No external fonts (use system fonts)
+
+No API keys or sensitive data
+
+No server-side code
+
+YES:
+
+Pure HTML/CSS/JS
+
+Self-contained
+
+Works offline
+
+Mobile-responsive
+
+Professional presentation
+
+Easy to customize
