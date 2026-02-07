@@ -103,7 +103,13 @@ export default function Home() {
         <SectionHeading number="02" title="Featured Projects" />
         
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-
+    <ProjectCard 
+            title="Restaurant Landing Page"
+            description="A responsive, high-performance landing page for a local bistro. Optimized for SEO and accessibility, featuring an interactive menu and reservation form."
+            tags={["HTML", "CSS", "JavaScript", "GSAP"]}
+            image="/images/project-4.PNG"
+            links={{ github: "#", demo: "#" }}
+          />
             <ProjectCard 
       title="Restaurant Menu"
       description="A responsive, high-performance Menu. Optimized for SEO and accessibility, featuring an interactive menu and reservation form."
