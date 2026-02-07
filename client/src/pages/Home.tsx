@@ -103,16 +103,7 @@ export default function Home() {
         <SectionHeading number="02" title="Featured Projects" />
         
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-              <ProjectCard 
-      title="Restaurant Landing Page"
-      description="A responsive, high-performance landing page for a local bistro. Optimized for SEO and accessibility, featuring an interactive menu and reservation form."
-      tags={["React", "TypeScript", "Tailwind CSS", "Framer Motion"]}
-      image="/images/project-4.PNG"
-      links={{ 
-        github: "https://github.com/yourusername/beirut-bistro", 
-        demo: "https://mosiac-cafe-example.netlify.app/" 
-      }}
-    />
+
             <ProjectCard 
       title="Restaurant Menu"
       description="A responsive, high-performance Menu. Optimized for SEO and accessibility, featuring an interactive menu and reservation form."
@@ -133,7 +124,7 @@ export default function Home() {
         demo: "https://interactive-resume-th.netlify.app/" 
       }}
     />
-  
+
         </div>
       </section>
 
