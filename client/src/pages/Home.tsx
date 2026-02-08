@@ -108,7 +108,10 @@ export default function Home() {
             description="A responsive, high-performance landing page for a local bistro. Optimized for SEO and accessibility, featuring an interactive menu and reservation form."
             tags={["HTML", "CSS", "JavaScript", "GSAP"]}
             image="/images/project-4.PNG"
-            links={{ github: "#", demo: "#" }}
+           links={{ 
+              github: "https://github.com/yourusername/beirut-bistro", 
+              demo: "https://mosiac-cafe-example.netlify.app/" 
+            }}
           />
           <ProjectCard 
             title="Restaurant Menu"
