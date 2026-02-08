@@ -136,19 +136,98 @@ export default function Home() {
 
       {/* Contact Section */}
       <section id="contact" className="py-24 max-w-4xl mx-auto px-6 sm:px-12 text-center">
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          className="mb-16"
-        >
-          <p className="font-mono text-[#64ffda] mb-4">03. What's Next?</p>
-          <h2 className="text-4xl md:text-5xl font-bold text-[#e6f1ff] mb-6">Get In Touch</h2>
-          <p className="max-w-xl mx-auto text-[#8892b0] mb-12">
-            Although I'm not currently looking for any new opportunities, my inbox is always open. Whether you have a question or just want to say hi, I'll try my best to get back to you!
-          </p>
-          <ContactForm />
-        </motion.div>
+  {/* Contact Section - Compact Version */}
+<section id="contact" className="py-24 max-w-4xl mx-auto px-6 sm:px-12 text-center">
+  <motion.div
+    initial={{ opacity: 0, y: 20 }}
+    whileInView={{ opacity: 1, y: 0 }}
+    viewport={{ once: true }}
+  >
+    <p className="font-mono text-[#64ffda] mb-4">03. Connect With Me</p>
+    <h2 className="text-4xl md:text-5xl font-bold text-[#e6f1ff] mb-6">Let's Build Together</h2>
+    <p className="max-w-xl mx-auto text-[#8892b0] mb-12">
+      Ready to bring your ideas to life? Reach out through any of these platforms.
+    </p>
+    
+    {/* Simple Social Links */}
+    <div className="flex flex-wrap justify-center gap-6 mb-12">
+      <SocialLink 
+        href="https://wa.me/96181670354"
+        icon="whatsapp"
+        label="WhatsApp"
+        color="#25D366"
+      />
+      <SocialLink 
+        href="https://github.com/mohamadalnabhan"
+        icon="github"
+        label="GitHub"
+        color="#64ffda"
+      />
+      <SocialLink 
+        href="https://instagram.com/heyweb0"
+        icon="instagram"
+        label="Instagram"
+        color="#E4405F"
+      />
+      <SocialLink 
+        href="https://www.linkedin.com/in/mohamad-alnabhan-a87b89383"
+        icon="linkedin"
+        label="LinkedIn"
+        color="#0A66C2"
+      />
+    </div>
+
+    {/* WhatsApp Quick Action */}
+    <div className="bg-gradient-to-r from-[#112240] to-[#0a192f] border border-[#233554] rounded-2xl p-8 max-w-md mx-auto">
+      <div className="flex items-center justify-center gap-4 mb-4">
+        <div className="w-12 h-12 rounded-full bg-[#25D366]/10 flex items-center justify-center">
+          {/* WhatsApp icon */}
+        </div>
+        <div className="text-left">
+          <h3 className="font-bold text-[#e6f1ff]">Quickest Response</h3>
+          <p className="text-sm text-[#8892b0]">Message me on WhatsApp</p>
+        </div>
+      </div>
+      <a 
+        href="https://wa.me/96181670354"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="inline-flex items-center gap-2 bg-[#25D366] text-white font-semibold px-6 py-3 rounded-lg hover:bg-[#25D366]/90 transition-colors"
+      >
+        <span>Message Now</span>
+        <ExternalLink className="w-4 h-4" />
+      </a>
+    </div>
+  </motion.div>
+</section>
+
+// SocialLink Component
+function SocialLink({ href, icon, label, color }: { 
+  href: string; 
+  icon: string; 
+  label: string; 
+  color: string;
+}) {
+  return (
+    <motion.a
+      whileHover={{ scale: 1.05 }}
+      href={href}
+      target="_blank"
+      rel="noopener noreferrer"
+      className="flex flex-col items-center p-4 rounded-xl bg-[#112240] border border-[#233554] hover:border-opacity-50 transition-all duration-300 min-w-[120px] group"
+      style={{ borderColor: `${color}30` }}
+    >
+      <div 
+        className="w-10 h-10 rounded-full mb-3 flex items-center justify-center group-hover:scale-110 transition-transform"
+        style={{ backgroundColor: `${color}20` }}
+      >
+        {/* Icon would go here based on 'icon' prop */}
+      </div>
+      <span className="font-medium text-[#e6f1ff]">{label}</span>
+      <span className="text-xs text-[#8892b0] mt-1">Click to visit</span>
+    </motion.a>
+  )
+}
       </section>
 
       {/* Footer */}
